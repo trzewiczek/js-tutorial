@@ -24,16 +24,9 @@ For handling textual data JavaScript offers us strings:
 'Alice was beginning to get very tired of sitting by her sister on the bank'
 ```
 
-All strings start with `'` and end with `'`. JavaScript is a good friend so unless you explicitly ask it to, it won't read what's between those two `'` characters. Some will tell you that strings in JavaScript start with `"` and end with `"` and they will be right. Until you're consistent with your choice JavaScript won't complain. Be it `'` or `"` it's fine.
+All strings start with `'` and end with `'`. JavaScript is a good friend so unless you explicitly ask it to, it won't read what's between those two `'` characters. Some will tell you that strings in JavaScript start with `"` and end with `"` and they will be right too. Until you're consistent with your choice JavaScript won't complain. Be it `'` or `"` it's fine. Due to bias mentioned in the introduction paragraph, we will stick to single quote as `standard` enforces us to do.
 
 ```javascript
-"once or twice she had peeped into the book her sister was reading"
-```
-
-The last question then is how to represent `'` and `"` within the string. And there are two way how we can approach it - use `'` if `"` is in your string or escape it with `\` character:
-
-```javascript
-'"and what is the use of a book," thought Alice "without pictures or conversations?"'
 'it was labelled \'ORANGE MARMALADE\', but to her great disappointment it was empty'
 ```
 
