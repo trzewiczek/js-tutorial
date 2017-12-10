@@ -14,7 +14,16 @@ First we have to decide how to represent our customers in JavaScript. For the sa
 During the course of this tutorial we'll see more examples, all making clear distinction between data modeling, data transformation and data reasoning.
 
 
+## Data modeling
+JavaScript offers us a collection of tools to model the data. Sooner or later in this tutorial we'll meet significant part of this collection. For now though let's focus on the most common ones, these responsible for modeling text, numbers and logical values.
 
+### Strings
+For handling textual data JavaScript offers us strings:
 
+```javascript
+'Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do: once or twice she had peeped into the book her sister was reading, but it had no pictures or conversations in it, "and what is the use of a book," thought Alice "without pictures or conversations?"'
+```
+
+All strings start with `'` and end with `'`. JavaScript is a good friend so unless you explicitly ask it to, it won't read what's between those two `'` characters. Some will tell you that strings in JavaScript start with `"` and end with `"` and they will be right. Until you're consistent with your choice JavaScript won't complain. Be it `'` or `"` it's fine.
 
 
