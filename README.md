@@ -1,5 +1,12 @@
 # JavaScript from Scratch
 
+## Introduction
+This tutorial is opinionated: first of all it's focused on a subset of JavaScript that will get you up to speed quickly. It won't go into language design details and all the advanced features. It will cover parts most used in the regular day to day programming activities of an average JavaScript developer.
+
+With this in mind tutorial teaches ES6 and beyond. It won't cover legacy concepts (most significantly `var`) and won't make any excuses when using popular [stage-3 JavaScript features](https://github.com/tc39/proposals). This decision is enforced by using [Standard](https://standardjs.com/), a JavaScript linter that helps us keep our code style consistent and following community guidelines.
+
+Last but not least tutorial is rooted in more functional than object-oriented mindset. 
+
 ## The metaphor
 One of the common programming metaphors is a recipe one. Programming is like making a dinner -- a sequence of strict steps leading to a delicious result. Even though it's hard to deny this metaphor there is yet another one that turns out to be useful in software architecture design -- the metaphor of an assembly line. Programming is made of little data transformation shops, each being unaware of the others but being highly skilled in doing one thing, i.e. transforming certain type of objects into another specific ones. Painting shop in car assembly line doesn't necessarily know it's a car and why it's to be painted red, but knows how to take this weird silver metal shape from previous shop, how to paint it red and finally how to safely pass it to the next shop, whatever it is. What's more if only the manufacture manager is smart enough the painting shop won't only paint red, but you'll be able to select a colour depending on the market demand.
 
@@ -24,7 +31,7 @@ For handling textual data JavaScript offers us strings:
 'Alice was beginning to get very tired of sitting by her sister on the bank'
 ```
 
-All strings start with `'` and end with `'`. JavaScript is a good friend so unless you explicitly ask it to, it won't read what's between those two `'` characters. Some will tell you that strings in JavaScript start with `"` and end with `"` and they will be right too. Until you're consistent with your choice JavaScript won't complain. Be it `'` or `"` it's fine. Due to bias mentioned in the introduction paragraph, we will stick to single quote as `standard` enforces us to do.
+All strings start with `'` and end with `'`. JavaScript is a good friend so unless you explicitly ask it to, it won't read what's between those two `'` characters. Some will tell you that strings in JavaScript start with `"` and end with `"` and they will be right too. Until you're consistent with your choice JavaScript won't complain. Be it `'` or `"` it's fine. Due to bias mentioned in the introduction paragraph, we will stick to single quotes as `standard` enforces us to do.
 
 ```javascript
 'it was labelled \'ORANGE MARMALADE\', but to her great disappointment it was empty'
