@@ -21,9 +21,22 @@ JavaScript offers us a collection of tools to model the data. Sooner or later in
 For handling textual data JavaScript offers us strings:
 
 ```javascript
-'Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do: once or twice she had peeped into the book her sister was reading, but it had no pictures or conversations in it, "and what is the use of a book," thought Alice "without pictures or conversations?"'
+'Alice was beginning to get very tired of sitting by her sister on the bank'
 ```
 
 All strings start with `'` and end with `'`. JavaScript is a good friend so unless you explicitly ask it to, it won't read what's between those two `'` characters. Some will tell you that strings in JavaScript start with `"` and end with `"` and they will be right. Until you're consistent with your choice JavaScript won't complain. Be it `'` or `"` it's fine.
 
+```javascript
+"once or twice she had peeped into the book her sister was reading"
+```
 
+The last question then is how to represent `'` and `"` within the string. And there are two way how we can approach it - use `'` if `"` is in your string or escape it with `\` character:
+
+```javascript
+'"and what is the use of a book," thought Alice "without pictures or conversations?"'
+'it was labelled \'ORANGE MARMALADE\', but to her great disappointment it was empty'
+```
+
+Enough strings.
+
+### Numbers
