@@ -47,9 +47,9 @@ The answer is, we _escape_ every single quote within the string preceding them w
 It looks ugly, I agree, but in reality we won't have too many occasions to use it. Most of our programs don't speak proper English, single quote is mostly string beginning or the end.
 
 ### Numbers
-Whenever we want to express some quantity JavaScript offers us another data type: `number`. Nice thing about JavaScript numbers is that it doesn't make much of a difference if it's an integer (e.g. `3`) or floating point number (e.g. `3.14`).
+Whenever we want to express some quantity JavaScript offers us another data type: `number`. Nice thing about JavaScript numbers is that it doesn't make much of a difference if it's an integer (e.g. `3`) or floating point number (e.g. `3.14`). The only thing we have to remember is that when typing floating point ones, we use `.` (_dot_) not `,` (_comma_).
 
-In JavaScript you can represent numbers in so many formats:
+Some will tell you that in JavaScript you can represent numbers not only as decimals (`3` or `3.14`) but as well in many other formats:
 
 ```javascript
 123e5
@@ -60,7 +60,9 @@ In JavaScript you can represent numbers in so many formats:
 0xabcdef
 ```
 
-Fancy, but who wants to read such thing. In this tutorial we'll stick to regular numbers — the ones we all know from school. Let's then translate those monsters above into something meaningful:
+Fancy, but who wants to read such thing? _#readabilitycounts_
+
+In this tutorial we'll stick to regular decimal numbers—the ones we all know from school. Let's then translate those monsters above into something meaningful:
 
 ```javascript
 12300000
@@ -74,7 +76,7 @@ Fancy, but who wants to read such thing. In this tutorial we'll stick to regular
 So much better.
 
 ### Booleans
-Booleans is the fancy name for two values: `true` and `false`. We use them to express the very fact of something being... well... true or false. Just like with our quarterly report from above, where we wanted to express that some customers have more than 5000 users in our system. For some it's true, so others it's false. End of story.
+Booleans is a fancy name for two values: `true` and `false`. We use them to express the very fact of something being... well... true or false. Just like with our quarterly report from above, where we wanted to express that some customers have more than 5000 users in our system. For some it's true, for others it's false. End of story.
 
-To make this section longer we'll mention [George Boole](https://en.wikipedia.org/wiki/George_Boole), an English mathematician who invented so called [Boolean Algebra](https://en.wikipedia.org/wiki/Boolean_algebra) that turned to be solid foundation for what we do in programming every day.
+To make this section longer we'll mention [George Boole](https://en.wikipedia.org/wiki/George_Boole), an English mathematician who invented so called [Boolean Algebra](https://en.wikipedia.org/wiki/Boolean_algebra) that turned to be solid foundation for what we do in programming every day. The name `Booleans` comes from his surname. 
 
