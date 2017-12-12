@@ -81,4 +81,20 @@ Booleans is a fancy name for two values: `true` and `false`. We use them to expr
 To make this section longer we'll mention [George Boole](https://en.wikipedia.org/wiki/George_Boole), an English mathematician who invented so called [Boolean Algebra](https://en.wikipedia.org/wiki/Boolean_algebra) that turned to be a solid foundation for what we do in programming every day. The name `Booleans` comes from his surname. What a surprise.
 
 ## Intermezzo I: Naming things
-_soon to come with glory_
+Being able to express values is valuable in itself. But what fun is that if you cannot name them and use later in your code? Lucky us, JavaScript is easy with naming:
+
+```javascript
+const myName = 'Alice'
+const aliceNewFriend = 'Cheshire Cat'
+const numOfPages = 137
+```
+
+First of all, whenever we want to name something—be it a string, a number or a boolean value—we should start with a special `const` word. With its help we ensure that no one will ever change what our name actually means. In our case we're making sure `myName` always be `Alice`, which is a good thing, isn't it?
+
+Next, we come with a name itself. Developers are [recognized to be really bad at naming things](https://martinfowler.com/bliki/TwoHardThings.html), so after you pass this part, the rest will be a piece of cake. By convention (and as a part of the good manners) most names in JavaScript start with lowercase letter and if consists of a few words put together all but first start with the uppercase, e.g. `aliceNewFriend`.
+
+_Hand in hand is the only way to land_ sings a single equals character (`=`) to the name and the corresponding value. We say then that the value is bound to the name.
+
+To put it all together we could read the last one as: `Ensure that numOfPages is always 137`.
+
+Some will tell you and they will be right—besides `const` we've got two other options when naming things: `var` and `let`. The first one is a crazy and buggy legacy JavaScript feature I will mention never again in this tutorial! The later is no legacy at all and it plays a key role in certain, specific, sometimes-to-happen situations we will finally cover later in the tutorial. For now though we stick to `const`—it's save, clear and used in the most situations. 
