@@ -97,4 +97,23 @@ Next, we come with a name itself. Developers are [recognized to be really bad at
 
 To put it all together we could read our last example simply as: `Ensure that numOfPages is always 137`.
 
-Some will tell you and they will be right that besides `const` we've got two other options when naming things: `var` and `let`. The first one is a crazy and buggy legacy JavaScript feature I will mention never again in this tutorial! The later is no legacy at all and it plays a key role in certain, specific, sometimes-to-happen situations we will finally cover later in the tutorial. For now though we stick to `const`—it's save, clear and used in the most situations.
+Some will tell you—and they will be right—that besides `const` we've got two other options when naming things: `var` and `let`. The first one is a crazy and buggy legacy JavaScript feature I will mention never again in this tutorial! The later is no legacy at all and it plays a key role in certain, specific, sometimes-to-happen situations we will finally cover later in the tutorial. For now though we stick to `const`—it's save, clear and used in the most situations.
+
+## Data Modeling Continued
+
+Sometimes having a value and naming it is not enough. What if we want to deal with a collection of values, say all usernames in our system? What if we know that some pieces of information when put toghether create a new meaningful piece of information, say username and password as authentication credentials? For these scenarios JavaScript offers us _compound data types_ from which for time being we'll use only two: `Array` and `Object`. 
+
+### Arrays
+No matter how many hours people will waste in the Internet fighting who's more, `Array` is just a simple list of elements. 
+
+```javascript
+const usernames = ['alice', 'rabbit', 'cheshire']
+const aliceHeights = [15, 10, 4]
+```
+
+Different from some other languages JavaScript doesn't restrict you from putting different things onto one list:
+
+```javascript
+const fleaMarket = ['lollipop', 45, true, true, 'Joyce', false, 5]
+```
+
