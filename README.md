@@ -91,7 +91,7 @@ const numOfPages = 137
 
 First of all, whenever we want to name something—be it a string, a number or a boolean value—we should start with a special `const` word. With its help we ensure that no one will ever change what our name actually means. In our case we're making sure `myName` always be `Alice`, which is a good thing, isn't it?
 
-Next, we come with a name itself. Developers are [recognized to be really bad at naming things](https://martinfowler.com/bliki/TwoHardThings.html), so after you pass this part, the rest will be a piece of cake. By convention (and as a part of the good manners) most names in JavaScript start with lowercase and if consists of a few words put together, all but first start with the uppercase, e.g. `aliceNewFriend`.
+Next, we come with a name itself. Developers are [recognized to be really bad at naming things](https://martinfowler.com/bliki/TwoHardThings.html), so after you pass this part, the rest will be a piece of cake. By convention (and as a part of the good manners) most names in JavaScript start with lowercase and if consists of a few words put together, all but first start with the uppercase, e.g. `aliceNewFriend`. Funny enough we call it a _Camel Case_.
 
 [_Hand in hand is the only way to land_](https://www.youtube.com/watch?v=mcUza_wWCfA) sings a single equals character (`=`) to the name and its corresponding value. We say that the value is bound to the name.
 
@@ -101,27 +101,27 @@ Some will tell you—and they will be right—that besides `const` we've got two
 
 ## Data Modeling Continued
 
-Sometimes having a value and naming it is not enough. What if we want to deal with a collection of values, say all usernames in our system? What if we know that some pieces of information when put toghether create a new meaningful piece of information, say username and password as authentication credentials? For these scenarios JavaScript offers us _compound data types_ from which for time being we'll use only two: `Array` and `Object`.
+Sometimes having a value and naming it is not enough. What if we want to deal with a collection of values, say all usernames in our system? What if we know that some pieces of information when put toghether create a new meaningful piece of information, say username and password as authentication credentials? For these scenarios JavaScript offers us _compound data types_ from which—for time being—we'll use only two: `Array` and `Object`.
 
 ### Arrays
-No matter how many hours people waste in the Internet fighting who's more, `Array` is just a simple list of elements.
+No matter how many hours people waste fighting each other in the Internet, `Array` is just a simple list of elements.
 
 ```javascript
 const usernames = ['alice', 'rabbit', 'cheshire']
 const aliceHeights = [15, 10, 4]
 ```
 
-Different from some other languages JavaScript doesn't restrict you from putting different things onto one list:
+Different from some other languages JavaScript doesn't restrict us from putting different things onto one list:
 
 ```javascript
 const fleaMarket = ['lollipop', 45, true, true, 'Joyce', false, 5]
 ```
 
-In reality though, you won't probably find too many of such mixed arrays. Once again, by the virtue of the good manners we tent to keep what's on the list consistent. As we'll find out soon, this sacrifice pays off really well.
+In reality though, you won't probably find too many occasions to mixed things into array. Once again, by the virtue of the good manners we tent to keep what's on the list consistent. As we'll soon find out, this sacrifice pays off really well.
 
-Putting things into the closed is so much easier than finding them later. So is with the arrays. Before we dive into the problem, let's all first agree that when you put your values on the list, you decide to refer to them not as _your values_ but rather as _positions on the list_. In this sense both third and fourth elements on the `fleaMarket` list are `true` and Mr.`Joyce` took the fifth position on this list. So far so good.
+Putting things into the closed is so much easier than finding them later. So is with the arrays. Before we dive into the problem, let's all first agree that when you put your values on the list, you decide to refer to them not as _your values_ but rather as _positions on your list_. In this sense both third and fourth elements on the `fleaMarket` list are `true` and Mr.`Joyce` took the fifth position on this list. So far so good.
 
-The problem comes with how JavaScript counts _position on the list_. And it does starting with **zero**, so to refer to **fifth** position on the list (Mr.`Joyce` once again) we would write:
+The problem comes with how JavaScript counts _position on the list_. And it does it starting with **zero**, so to refer to **fifth** position on the list (Mr.`Joyce` once again) we would write:
 
 ```javascript
 fleaMarket[4]
@@ -134,4 +134,4 @@ fleaMartek[2]
 fleaMartek[3]
 ```
 
-In 50 bugs you'll get used to it.
+In 50 bugs you'll get used to it, don't you worry.
