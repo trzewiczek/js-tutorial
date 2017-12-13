@@ -97,7 +97,7 @@ Next, we meet an equals character (`=`) that—as we, nerds would say—bounds t
 
 Lastly, we provide the actual value we want to name, be it a string, a number or a boolean. Or even something else.
 
-To put it all together we could read our last example simply as: `Ensure that numOfPages is always 137`. Fair enough. 
+To put it all together we could read our last example simply as: `Ensure that numOfPages is always 137`. Fair enough.
 
 Some will tell you—and they will be right—that besides `const` we've got two other options when naming things: `var` and `let`. The first one is a crazy and buggy legacy JavaScript feature I will mention never again in this tutorial! The later is no legacy at all and it plays a key role in certain, specific, sometimes-to-happen situations we will finally cover later in the tutorial. For now though we stick to `const`—it's save, clear and used in the most situations.
 
@@ -119,9 +119,9 @@ Different from some other languages JavaScript doesn't restrict us from putting 
 const fleaMarket = ['lollipop', 45, true, true, 'Joyce', false, 5]
 ```
 
-In reality though, you won't probably find too many occasions to mixed things into array. Once again, by the virtue of the good manners we tent to keep what's on the list consistent. As we'll soon find out, this sacrifice pays off really well.
+In reality though, we won't probably find too many occasions to put mixed things into array. Once again, by the virtue of the good manners we tend to keep what's on the list consistent. As we'll soon find out, this sacrifice pays off really well.
 
-Putting things into the closed is so much easier than finding them later. So is with the arrays. Before we dive into the problem, let's all first agree that when you put your values on the list, you decide to refer to them not as _your values_ but rather as _positions on your list_. In this sense both third and fourth elements on the `fleaMarket` list are `true` and Mr.`Joyce` took the fifth position on this list. So far so good.
+Putting things into the closed is so much easier than finding them later. So is with the arrays. Before we dive into the problem itself, let's all first agree that when we put our values on the list, we decide to refer to them not as _our values_ but rather as _positions on our list_. In this sense both third and fourth elements on the `fleaMarket` list are `true` and Mr.`Joyce` took the fifth position on this list. So far so good.
 
 The problem comes with how JavaScript counts _position on the list_. And it does it starting with **zero**, so to refer to **fifth** position on the list (Mr.`Joyce` once again) we would write:
 
@@ -136,4 +136,4 @@ fleaMartek[2]
 fleaMartek[3]
 ```
 
-In 50 bugs you'll get used to it, don't you worry.
+Weird? In 50 bugs you'll get used to it, don't you worry.
