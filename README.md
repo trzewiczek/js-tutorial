@@ -93,9 +93,11 @@ First of all, whenever we want to name something—be it a string, a number or a
 
 Next, we come with a name itself. Developers are [recognized to be really bad at naming things](https://martinfowler.com/bliki/TwoHardThings.html), so after you pass this part, the rest will be a piece of cake. By convention (and as a part of the good manners) most names in JavaScript start with lowercase and if consists of a few words put together, all but first start with the uppercase, e.g. `aliceNewFriend`. Funny enough we call it a _Camel Case_.
 
-[_Hand in hand is the only way to land_](https://www.youtube.com/watch?v=mcUza_wWCfA) sings a single equals character (`=`) to the name and its corresponding value. We say that the value is bound to the name.
+Next, we meet an equals character (`=`) that—as we, nerds would say—bounds the value to the given name.
 
-To put it all together we could read our last example simply as: `Ensure that numOfPages is always 137`.
+Lastly, we provide the actual value we want to name, be it a string, a number or a boolean. Or even something else.
+
+To put it all together we could read our last example simply as: `Ensure that numOfPages is always 137`. Fair enough. 
 
 Some will tell you—and they will be right—that besides `const` we've got two other options when naming things: `var` and `let`. The first one is a crazy and buggy legacy JavaScript feature I will mention never again in this tutorial! The later is no legacy at all and it plays a key role in certain, specific, sometimes-to-happen situations we will finally cover later in the tutorial. For now though we stick to `const`—it's save, clear and used in the most situations.
 
