@@ -101,10 +101,10 @@ Some will tell you—and they will be right—that besides `const` we've got two
 
 ## Data Modeling Continued
 
-Sometimes having a value and naming it is not enough. What if we want to deal with a collection of values, say all usernames in our system? What if we know that some pieces of information when put toghether create a new meaningful piece of information, say username and password as authentication credentials? For these scenarios JavaScript offers us _compound data types_ from which for time being we'll use only two: `Array` and `Object`. 
+Sometimes having a value and naming it is not enough. What if we want to deal with a collection of values, say all usernames in our system? What if we know that some pieces of information when put toghether create a new meaningful piece of information, say username and password as authentication credentials? For these scenarios JavaScript offers us _compound data types_ from which for time being we'll use only two: `Array` and `Object`.
 
 ### Arrays
-No matter how many hours people will waste in the Internet fighting who's more, `Array` is just a simple list of elements. 
+No matter how many hours people waste in the Internet fighting who's more, `Array` is just a simple list of elements.
 
 ```javascript
 const usernames = ['alice', 'rabbit', 'cheshire']
@@ -117,3 +117,21 @@ Different from some other languages JavaScript doesn't restrict you from putting
 const fleaMarket = ['lollipop', 45, true, true, 'Joyce', false, 5]
 ```
 
+In reality though, you won't probably find too many of such mixed arrays. Once again, by the virtue of the good manners we tent to keep what's on the list consistent. As we'll find out soon, this sacrifice pays off really well.
+
+Putting things into the closed is so much easier than finding them later. So is with the arrays. Before we dive into the problem, let's all first agree that when you put your values on the list, you decide to refer to them not as _your values_ but rather as _positions on the list_. In this sense both third and fourth elements on the `fleaMarket` list are `true` and Mr.`Joyce` took the fifth position on this list. So far so good.
+
+The problem comes with how JavaScript counts _position on the list_. And it does starting with **zero**, so to refer to **fifth** position on the list (Mr.`Joyce` once again) we would write:
+
+```javascript
+fleaMarket[4]
+```
+
+and to get booleans at **third** and **fourth** position we would write:
+
+```javascript
+fleaMartek[2]
+fleaMartek[3]
+```
+
+In 50 bugs you'll get used to it.
