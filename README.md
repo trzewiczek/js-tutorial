@@ -137,3 +137,28 @@ fleaMartek[3]
 ```
 
 Weird? In 50 bugs you'll get used to it, don't you worry.
+
+### Objects
+Imagine this:
+
+```javascript
+const name = 'Rabbit'
+const address = 'Rabbit Hole'
+const quote = 'Oh dear! Oh dear! I shall be late!'
+```
+
+All good. Now, let's add the Caterpillar:
+
+```javascript
+const name = 'Caterpillar'
+const address = 'Mushroom'
+const quote = 'You\'ll get used to it in time'
+```
+
+All fine. Or not. And actually not that good in three different manners.
+
+First of all once declared names cannot be re-declared. So after we stated `const name`, `const address` and `const quote` for the Rabbit, we cannot do it later for the Caterpillar.
+
+Next, we run into a problem with changing values of names declared with `const` word. Constant the `const` means, therefor careful you shall be and value change not!
+
+Finally, there is one more problem that even though it won't cause any JavaScript errors, it will cause us a solid headache later in the development. The problem is that there is a gap between what we understand by the values above and the way we modeled them. In contrast to what we see in JavaScript abstraction, we tend to think about both groups of values as bigger entities, namely a character profile. 
