@@ -147,7 +147,7 @@ const address = 'Rabbit Hole'
 const quote = 'Oh dear! Oh dear! I shall be late!'
 ```
 
-All good. Now, let's add the Caterpillar:
+All good. Now, let's go to the Caterpillar:
 
 ```javascript
 const name = 'Caterpillar'
@@ -155,10 +155,36 @@ const address = 'Mushroom'
 const quote = 'You\'ll get used to it in time'
 ```
 
-All fine. Or not. And actually not that good in three different manners.
+All fine? Not really.
 
-First of all once declared names cannot be re-declared. So after we stated `const name`, `const address` and `const quote` for the Rabbit, we cannot do it later for the Caterpillar.
+First of all, once declared names cannot be re-declared (at least in most cases - we'll get to it), so after we stated `const name`, `const address` and `const quote` for the Rabbit, we cannot do it later for the Caterpillar. Especially that we try to assign to them new values, which is not allowed when a name is declared as `const`. Two bugs in one sitting. 
 
-Next, we run into a problem with changing values of names declared with `const` word. Constant the `const` means, therefor careful you shall be and value change not!
+We could easily avoid this problem by declaring more specific names, e.g.:
 
-Finally, there is one more problem that even though it won't cause any JavaScript errors, it will cause us a solid headache later in the development. The problem is that there is a gap between what we understand by the values above and the way we modeled them. In contrast to what we see in JavaScript abstraction, we tend to think about both groups of values as bigger entities, namely a character profile. 
+```javascript
+const rabbitName = 'Rabbit'
+const rabbitAddress = 'Rabbit Hole'
+const rabbitQuote = 'Oh dear! Oh dear! I shall be late!'
+
+const caterpillarName = 'Caterpillar'
+const caterpillarAddress = 'Mushroom'
+const caterpillarQuote = 'You\'ll get used to it in time'
+```
+
+Problem solved! But let's take a closer look into these names. We decided to add some specific prefix to each of them—one for each group of values. We say _group of values_ because even if it wasn't clearly expressed in the first place, we think of them in terms of a bigger entity, i.e. a book character profile. In adding a specific prefix to each name in the group we tried to express this semantic relationship of the values. 
+
+For this very purpose JavaScript offers us `Objects`:
+
+```javascript
+const rabbit = {
+    name: 'Rabbit',
+    address: 'Rabbit Hole',
+    quote: 'Oh dear! Oh dear! I shall be late!'
+}
+
+const caterpillar = {
+    name: 'Caterpillar'
+    address: 'Mushroom'
+    quote: 'You\'ll get used to it in time'
+}
+```
