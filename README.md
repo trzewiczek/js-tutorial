@@ -171,9 +171,11 @@ const caterpillarAddress = 'Mushroom'
 const caterpillarQuote = 'You\'ll get used to it in time'
 ```
 
-Problem solved! But let's take a closer look into these names. We decided to add some specific prefix to each of them—one for each group of values. We say _group of values_ because even if it wasn't clearly expressed in the first place, we think of them in terms of a bigger entity, i.e. a book character profile. In adding a specific prefix to each name in the group we tried to express this semantic relationship of the values. 
+Problem solved! But let's take a closer look into these names. We decided to add some specific prefix to each of them—one for each group of values. We say _a group of values_ because even if it wasn't clearly expressed in the first snippets of code, we think of these values in terms of a bigger entity, i.e. a book character profile. In adding a specific prefix to each name in the group we tried to express this semantic relationship of the values. 
 
-For this very purpose JavaScript offers us `Objects`:
+But is declaring many separate values artificially prefixed to be recognized as members of a group of values as good practice? Is it the only way? 
+
+Obviously not. JavaScript offers as a slick grouping mechanism called `Objects`:
 
 ```javascript
 const rabbit = {
