@@ -157,7 +157,7 @@ const quote = 'You\'ll get used to it in time'
 
 All fine? Not really.
 
-First of all, once declared names cannot be re-declared (at least in most cases - we'll get to it), so after we stated `const name`, `const address` and `const quote` for the Rabbit, we cannot do it later for the Caterpillar. Especially that we try to assign to them new values, which is not allowed when a name is declared as `const`. Two bugs in one sitting. 
+First of all, once declared names cannot be re-declared (at least in most cases - we'll get to it), so after we stated `const name`, `const address` and `const quote` for the Rabbit, we cannot do it later for the Caterpillar. Especially that we tried to assign new values to them, which is not allowed when a name is declared as `const`. Two bugs in one sitting. 
 
 We could easily avoid this problem by declaring more specific names, e.g.:
 
@@ -171,9 +171,11 @@ const caterpillarAddress = 'Mushroom'
 const caterpillarQuote = 'You\'ll get used to it in time'
 ```
 
-Problem solved! But let's take a closer look into these names. We decided to add some specific prefix to each of them—one for each group of values. We say _a group of values_ because even if it wasn't clearly expressed in the first snippets of code, we think of these values in terms of a bigger entity, i.e. a book character profile. In adding a specific prefix to each name in the group we tried to express this semantic relationship of the values. 
+Problem solved! So now let's take a closer look into these names. 
 
-But is declaring many separate values artificially prefixed to be recognized as members of a group of values as good practice? Is it the only way? 
+We decided to add some specific prefix to each of them—one for each group of values. We say _a group of values_ because even if it wasn't clearly expressed in the first snippets of code, we think of these values in terms of a bigger entity, i.e. a book character profile. In adding a specific prefix to each name in the group we tried to express this semantic relationship of the values. 
+
+But is declaring many separate values artificially prefixed to be recognized as members of a group of values a good practice? Is it the only way? 
 
 Obviously not. JavaScript offers as a slick grouping mechanism called `Objects`:
 
