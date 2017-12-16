@@ -157,7 +157,7 @@ const quote = 'You\'ll get used to it in time'
 
 All fine? Not really.
 
-First of all, once declared names cannot be re-declared (at least in most cases - we'll get to it), so after we stated `const name`, `const address` and `const quote` for the Rabbit, we cannot do it later for the Caterpillar. Especially that we tried to assign new values to them, which is not allowed when a name is declared as `const`. Two bugs in one sitting. 
+First of all, once declared names cannot be re-declared (at least in most cases - we'll get to it), so after we stated `const name`, `const address` and `const quote` for the Rabbit, we cannot do it later for the Caterpillar. Especially that we tried to assign new values to them, which is not allowed when a name is declared as `const`. Two bugs in one sitting.
 
 We could easily avoid this problem by declaring more specific names, e.g.:
 
@@ -171,11 +171,11 @@ const caterpillarAddress = 'Mushroom'
 const caterpillarQuote = 'You\'ll get used to it in time'
 ```
 
-Problem solved! So now let's take a closer look into these names. 
+Problem solved! So now let's take a closer look into these names.
 
-We decided to add some specific prefix to each of them—one for each group of values. We say _a group of values_ because even if it wasn't clearly expressed in the first snippets of code, we think of these values in terms of a bigger entity, i.e. a book character profile. In adding a specific prefix to each name in the group we tried to express this semantic relationship of the values. 
+We decided to add some specific prefix to each of them—one for each group of values. We say _a group of values_ because even if it wasn't clearly expressed in the first snippets of code, we think of these values in terms of a bigger entity, i.e. a book character profile. In adding a specific prefix to each name in the group we tried to express this semantic relationship of the values.
 
-But is declaring many separate values artificially prefixed to be recognized as members of a group of values a good practice? Is it the only way? 
+But is declaring many separate values artificially prefixed to be recognized as members of a group of values a good practice? Is it the only way?
 
 Obviously not. JavaScript offers as a slick grouping mechanism called `Objects`:
 
@@ -192,3 +192,7 @@ const caterpillar = {
     quote: 'You\'ll get used to it in time'
 }
 ```
+
+It's not that far from what we've done before with the prefixes, only now the prefix becomes a name itself, the rest lands inside the object and we use a colon (`:`) instead of equal sign (`=`) when inside the object.
+
+Names we declare inside the object are called _fields_ and they are visible within the object scope. In practice it means that `name` inside `rabbit` object is separate from `name` inside `caterpillar`, so no collisions here are possible.
