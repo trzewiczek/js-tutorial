@@ -197,4 +197,18 @@ It's not that far from what we've done before with the prefixes, only now the pr
 
 Names we declare inside an object are called _fields_ and they are visible only within the scope of the object they belong to. In practice it means that `name` is `rabbit`'s field and is separate from `name`—`caterpillar`'s field. In this sense no name collisions are possible here. We'll have to wait a little to fully appreciate this fact, so for now, let's just all say: 'Oh WOW!'
 
+Just like with `Arrays` it's easier to put things into the object than to get it back. And it's harder due to two ways we can approach the task. The first one differs not much from how we retrieve data from arrays—it's just _field name_ instead of an _index_ we use:
 
+```javascript
+rabbit['name']
+caterpillar['address']
+```
+
+The other way to access the data enclosed in the object is by using so called _dot notation_:
+
+```javscript
+rabbit.name
+caterpillar.address
+```
+
+In terms of the produced outcome there is no difference between them and when to use which one is just a pragmatic choice. And once again get the rational behind these choices we'll have to gain some experience. For the time being, let's just continue with the _dot notation_ in hand.
