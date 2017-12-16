@@ -103,7 +103,7 @@ Some will tell you—and they will be right—that besides `const` we've got two
 
 ## Data Modeling Continued
 
-Sometimes having a value and naming it is not enough. What if we want to deal with a collection of values, say all usernames in our system? What if we know that some pieces of information when put toghether create a new meaningful piece of information, say username and password as authentication credentials? For these scenarios JavaScript offers us _compound data types_ from which—for time being—we'll use only two: `Array` and `Object`.
+Sometimes having a value and naming it is not enough. What if we want to deal with a collection of values, say all usernames in our system? What if we know that some pieces of information when put toghether create a new meaningful piece of information, say username and password as authentication credentials? For these scenarios JavaScript offers us _compound data types_ from which—for the time being—we'll use only two: `Array` and `Object`.
 
 ### Arrays
 No matter how many hours people waste fighting each other in the Internet, `Array` is just a simple list of elements.
@@ -193,11 +193,11 @@ const caterpillar = {
 }
 ```
 
-It's not that far from what we've done before with the prefixes, only now the prefix becomes a name itself, the rest lands inside the object and we use a colon (`:`) instead of equal sign (`=`) when inside the object.
+It's not that far from what we've done before with the prefixes, only now the prefix becomes a name itself and the rest lands inside the object. Additionally we use a colon (`:`) instead of equal sign (`=`) when inside the object. Not a big deal, in the end.
 
-Names we declare inside an object are called _fields_ and they are visible only within the scope of the object they belong to. In practice it means that `name` is `rabbit`'s field and is separate from `name`—`caterpillar`'s field. In this sense no name collisions are possible here. We'll have to wait a little to fully appreciate this fact, so for now, let's just all say: 'Oh WOW!'
+Names we declare inside an object are called _fields_ and they are visible only within the scope of the object they belong to. In practice it means that `name` is `rabbit`'s field and is separate from `name`—`caterpillar`'s field. In this sense no name collisions are possible here. We'll have to wait a little bit to fully appreciate this fact, so for now, let's all just say: _Oh WOW!_
 
-Just like with `Arrays` it's easier to put things into the object than to get it back. And it's harder due to two ways we can approach the task. The first one differs not much from how we retrieve data from arrays—it's just _field name_ instead of an _index_ we use:
+Just like with `Arrays` it's easier to put things into the object than to get it back. And it's even harder then with arrays due to two ways we can approach the task. The first one differs not much from how we retrieve data from arrays—it's just _field name_ instead of an _index_ we use:
 
 ```javascript
 rabbit['name']
@@ -211,4 +211,33 @@ rabbit.name
 caterpillar.address
 ```
 
-In terms of the produced outcome there is no difference between them and when to use which one is just a pragmatic choice. And once again get the rational behind these choices we'll have to gain some experience. For the time being, let's just continue with the _dot notation_ in hand.
+In terms of the produced outcome there is no difference between them and it's just a pragmatic choice (most of the time) when to use each. And once again to get the rational behind these choices we'll have to gain some more experience with JavaScript. For the time being, let's just continue with the _dot notation_ in hand.
+
+
+### Arrays and Objects combined
+Introducing `Objects` let us deal with semantically related values. But we still face a naming problem—each of the Objects had to have a separate name, one for Rabbit, one for Caterpillar etc. That means that it won't be easy to operate on the all the book characters as a collection.
+
+The rescue comes from the fact that Objects don't differ from other data types when put on the list:
+
+```javascript
+const characters = [
+  {
+    name: 'Rabbit',
+    address: 'Rabbit Hole',
+    quote: 'Oh dear! Oh dear! I shall be late!'
+  },
+  {
+    name: 'Caterpillar'
+    address: 'Mushroom'
+    quote: 'You\'ll get used to it in time'
+  }
+]
+```
+
+Now we can retrieve Rabbit's data easily by its list position index:
+
+```javascript
+characters[0]
+```
+
+This way we don't have to create additional names for the objects and when we want to add yet another one to the books characters collection we just put it on the list. You could ask, so how will we know what is the position on the list of the character we're looking for? We'll manage to find it—whey all have `name`s and `address`es, don't they?
