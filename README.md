@@ -214,8 +214,8 @@ caterpillar.address
 In terms of the produced outcome there is no difference between them and it's just a pragmatic choice (most of the time) when to use each. And once again to get the rational behind these choices we'll have to gain some more experience with JavaScript. For the time being, let's just continue with the _dot notation_ in hand.
 
 
-### Arrays and Objects combined
-Introducing `Objects` let us deal with semantically related values. But we still face a naming problem—each of the Objects had to have a separate name, one for Rabbit, one for Caterpillar etc. That means that it won't be easy to operate on the all the book characters as a collection.
+### Objects in the Array
+Introducing `Objects` let us deal with semantically related values. But we still face a naming problem—each of the Objects had to have a separate name, one for Rabbit, one for Caterpillar etc. That means that it won't be easy to operate on all of the book characters as one collection.
 
 The rescue comes from the fact that Objects don't differ from other data types when put on the list:
 
@@ -240,4 +240,7 @@ Now we can retrieve Rabbit's data easily by its list position index:
 characters[0]
 ```
 
-This way we don't have to create additional names for the objects and when we want to add yet another one to the books characters collection we just put it on the list. You could ask, so how will we know what is the position on the list of the character we're looking for? We'll manage to find it—whey all have `name`s and `address`es, don't they?
+This way we don't have to create additional names for the objects and when we want to add yet another one to the books characters collection we just put it on the list. You could ask, so how will we know what is the position on the list of the character we're looking for? We'll manage—they all have `name`s and `address`es, don't they?
+
+### Array in the Object
+** * * * **
