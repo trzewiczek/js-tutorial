@@ -255,9 +255,9 @@ or to make it short (we didn't want to create additional names, did we?):
 characters[0].name
 ```
 
-Let's go through this example step by step.
+Let's go through this notation step by step.
 
-When JavaScript sees such a snippet of code it starts with deciphering the names. First it researches what data is bound to the name `characters` and substitutes one with the other. In our case it's a list, so we can try to retrieve the first element of it (position index: `0`). It turns out to be an object so `characters[0]` is substituted by this object. Now we can operate on it using dot notation and access `name` field to get its value—it this case: `'Rabbit'`.
+When JavaScript sees such a snippet of code it starts with deciphering the names. First it researches what data is bound to the name `characters` and substitutes one with the other. In our case it's a list, so we can try to retrieve the first element of it (position index: `0`). It turns out to be an object so `characters[0]` is substituted by the object. Now we can operate on it using dot notation and access `name` field to get its value—it this case: `'Rabbit'`.
 
 ### Array in the Object
 Just like with Objects in the Array we can put an Array into the Object:
@@ -267,11 +267,11 @@ const rabbit = {
     name: 'Rabbit',
     address: 'Rabbit Hole',
     quote: 'Oh dear! Oh dear! I shall be late!',
-	attributes: ['waistcoat', 'pocket watch']
+    attributes: ['waistcoat', 'pocket watch']
 }
 ```
 
-No big deal. We still retrieve it just like the other fields with the _dot notation_:
+No big deal. We still retrieve it just like the other fields:
 
 ```javascript
 rabbit.attributes
@@ -285,10 +285,10 @@ rabbit.attributes[1]
 
 Just like in the previous example let's go with this one step by step.
 
-When JavaScript sees such a snippet of code it starts with deciphering the names. First it researches what data is bound to the name `rabbit` and substitutes one with the other. In our case it's an object, so we can try to retrieve the data using dot notation (field name: `attributes`). It turns out to be an array so `rabbit.attributes` is substituted by this array. Now we can operate on it using position indices and access second position on the list (index: `1`) to get its value—it this case: `'pocket watch'`.
+When JavaScript sees such a snippet of code it starts with deciphering the names. First it researches what data is bound to the name `rabbit` and substitutes one with the other. In our case it's an object, so we can try to retrieve the data using dot notation (field name: `attributes`). It turns out to be an array so `rabbit.attributes` is substituted by the array. Now we can operate on it using position indices and access second position on the list (index: `1`) to get its value—it this case: `'pocket watch'`.
 
 ### All put together
-Before we leave Alice and her friends in favor of some closer to real-world examples let's put compound data types into action:
+Before we leave Alice and her friends in favor of some real-world examples let's put compound data types into action:
 
 ```javascript
 const characters = [
@@ -296,21 +296,21 @@ const characters = [
     name: 'Rabbit',
     address: 'Rabbit Hole',
     quote: 'Oh dear! Oh dear! I shall be late!',
-	attributes: ['waistcoat', 'pocket watch']
+    attributes: ['waistcoat', 'pocket watch']
   },
   {
     name: 'Caterpillar'
     address: 'Mushroom'
     quote: 'You\'ll get used to it in time',
-	attributes: ['pipe']
+    attributes: ['pipe']
   },
   {
-	name: 'Cheshire Cat',
-	address: 'Bough',
-	quote: 'We\'re all mad here. I\'m mad. You\'re mad.',
-	attributes: []
+    name: 'Cheshire Cat',
+    address: 'Bough',
+    quote: 'We\'re all mad here. I\'m mad. You\'re mad.',
+    attributes: []
   }
 ]
 ```
 
-`characters[0].name` was running in circles with his `characters[0].attributes[1]` in his hand screaming `character[0].quote`. `characters[1].name` made himself comfortable on his `characters[1].address` and tried to calm down `characters[0].name` saying: `characters[1].quote` with his `characters[1].attributes[0]` in his mouth. Watching the scene from his `characters[2].address` `characters[2].name` cried out loud: `characters[2].quote`!
+`characters[0].name` was running in circles with his `characters[0].attributes[1]` in his hand screaming `character[0].quote`. `characters[1].name` made himself comfortable on his `characters[1].address` and tried to calm down `characters[0].name` saying: `characters[1].quote` with his `characters[1].attributes[0]` in his mouth. Watching the scene from his `characters[2].address` `characters[2].name` cried out loud: `characters[2].quote` and grinned.
