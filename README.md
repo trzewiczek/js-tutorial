@@ -195,4 +195,6 @@ const caterpillar = {
 
 It's not that far from what we've done before with the prefixes, only now the prefix becomes a name itself, the rest lands inside the object and we use a colon (`:`) instead of equal sign (`=`) when inside the object.
 
-Names we declare inside the object are called _fields_ and they are visible within the object scope. In practice it means that `name` inside `rabbit` object is separate from `name` inside `caterpillar`, so no collisions here are possible.
+Names we declare inside an object are called _fields_ and they are visible only within the scope of the object they belong to. In practice it means that `name` is `rabbit`'s field and is separate from `name`—`caterpillar`'s field. In this sense no name collisions are possible here. We'll have to wait a little to fully appreciate this fact, so for now, let's just all say: 'Oh WOW!'
+
+
