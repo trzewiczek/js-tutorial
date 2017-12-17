@@ -315,10 +315,10 @@ const characters = [
 
 `characters[0].name` was running in circles with his `characters[0].attributes[1]` in his hand screaming `character[0].quote`. `characters[1].name` made himself comfortable on his `characters[1].address` and tried to calm down `characters[0].name` saying: `characters[1].quote` with his `characters[1].attributes[0]` in his mouth. Watching the scene from his `characters[2].address` `characters[2].name` cried out loud: `characters[2].quote` and grinned.
 
-### Real world example (almost)
-To keep my promise and make this tutorial practical, let's now move to some more real world modeling example. It doesn't mean though that I do not encourage you to read [_Alice's Adventures in Wonderland_](http://www.gutenberg.org/ebooks/11). I sincerely do!
+### Real world example
+To keep my promise and make this tutorial practical, let's now move to some more real world modeling example. It doesn't mean I do not encourage you to read [_Alice's Adventures in Wonderland_](http://www.gutenberg.org/ebooks/11). I sincerely do! Meantime in web development...
 
-Back to web development. Imagine that we want to model some DOM elements, say all links on our page:
+Imagine that we want to model some DOM elements, say all links extracted from our app's view:
 
 ```javascript
 const page = [
@@ -328,8 +328,8 @@ const page = [
       class: ['link', 'btn', 'primary'],
       alt: 'Breaking the Ethers by Tuatara'
     },
-	text: 'Breaking the Ether by Tuatara',
-	visible: true
+    text: 'Breaking the Ether by Tuatara',
+    visible: true
   },
   {
     tag: 'button',
@@ -337,16 +337,16 @@ const page = [
       class: ['btn', 'primary'],
       id: 'sign-in-btn'
     },
-	text: 'Sign in',
-	visible: true
+    text: 'Sign in',
+    visible: true
   },
   {
     tag: 'a',
     attributes: {
       class: ['link', 'btn', 'primary', 'right'],
     },
-	text: 'Back to home',
-	visible: true
+    text: 'Back to home',
+    visible: true
   },
   {
     tag: 'a',
@@ -354,8 +354,8 @@ const page = [
       class: ['link', 'btn'],
       alt: 'See details'
     },
-	text: 'See full credits',
-	visible: false
+    text: 'See full credits',
+    visible: false
   },
   {
     tag: 'a',
@@ -363,8 +363,8 @@ const page = [
       class: ['link', 'btn', 'right', 'top'],
       alt: 'All CDs'
     },
-	text: 'All CDs',
-	visible: true
+    text: 'All CDs',
+    visible: true
   }
 ]
 ```
