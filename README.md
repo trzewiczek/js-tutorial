@@ -316,7 +316,7 @@ const characters = [
 `characters[0].name` was running in circles with his `characters[0].attributes[1]` in his hand screaming `character[0].quote`. `characters[1].name` made himself comfortable on his `characters[1].address` and tried to calm down `characters[0].name` saying: `characters[1].quote` with his `characters[1].attributes[0]` in his mouth. Watching the scene from his `characters[2].address` `characters[2].name` cried out loud: `characters[2].quote` and grinned.
 
 ### Real world example
-To keep my promise and make this tutorial practical, let's now move to some more real world modeling example. It doesn't mean I do not encourage you to read [_Alice's Adventures in Wonderland_](http://www.gutenberg.org/ebooks/11). I sincerely do! Meantime in web development...
+To keep my promise and make this tutorial practical, let's now move to some more real world modeling example. It doesn't mean I do not encourage you to read [_Alice's Adventures in Wonderland_](http://www.gutenberg.org/ebooks/11). I sincerely do! But meantime in web development...
 
 Imagine that we want to model some DOM elements, say all links extracted from our app's view:
 
@@ -369,6 +369,8 @@ const page = [
 ]
 ```
 
-No surprises I suppose. But let's take a step by step tour of this array.
+No surprises here, I suppose. Still, let's take a step by step tour of this bit of data.
 
-**...**
+First of all the name `page` (declared as `const`) directs us to an array. This means we want to treat link from our app's view as a collection, not individual entities. How we represent each of them is to be discovered, but for now we're sure each of them is a part of a bigger collection. Is there any specific order into this list? We don't know. Do we care about it at this point? Not really.
+
+Next, we see that each of these elements is an object. It makes perfect sense, doesn't it? A link is a multi-dimensional piece of information in the end. It has a tag name, some attributes, text show to the user and finally visibility status. For each of these dimensions we reserve a _field_ in the object and we do it smart—each object has the same set of fields: `tag`, `attributes`, `text` and `visibility`.
