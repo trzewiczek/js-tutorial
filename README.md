@@ -376,3 +376,10 @@ First of all the name `page` (declared as `const`) directs us to an array. This 
 Next, we see that each of these elements is an object. It makes perfect sense, doesn't it? A link is a multi-dimensional piece of information in the end. It has a tag name, some attributes, text shown to the user and finally visibility status. For each of these dimensions we reserve a _field_ in the object and we do it smart—each object in the collection has the same set of fields: `tag`, `attributes`, `text` and `visibility`.
 
 At this point we can say that we deal with a **collection of objects sharing a consistent design**.
+
+Let's now take a look into the values enclosed within our objects. Once again we find a pleasing consistency here: all `tag` and `text` values are always strings, for each object the field `visible` holds a boolean and `attributes` field always refers to an object. As mentioned before, consistency pays off really well. Even if we still lack the experience to fully appreciate it now.
+
+The only surprising design decision made is the inconsistent shape of the `attributes` object. For some elements on the list it consists of two fields (`class` and `alt` or `class` and `id`), for some only one (`class`), some attributes are ubiquitous (`class` again), some are unique to a certain element (i.e. `id`). Is this a right approach? Won't it cause us a headache later in the development? It sure will, but for now it has the best balance between expressiveness of our ideas on the one hand and ease of design on the other.
+
+
+
