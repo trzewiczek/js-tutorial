@@ -34,6 +34,7 @@ const memo = f => {
     }
 }
 
+// --------------- Example 1 ---------------
 const sum = (a, b) => {
     // use console.log in the function to see if the result 
     // is computed or taken from cache
@@ -60,12 +61,11 @@ console.log('===================================================================
 console.log(`>>> memoSum(2, 1)  ------->  ${memoSum(2, 1)}`)
 console.log('================================================================================')
 console.log(`>>> memoSum(2, 1)  ------->  ${memoSum(2, 1)}`)
-console.log('================================================================================')
 
 
 
 
-
+// --------------- Example 2 ---------------
 const counter = (xs) => {
     // use console.log in the function to see if the result 
     // is computed or taken from cache    
@@ -82,6 +82,7 @@ const listB = { x: 1, y: 2 }
 const memoCounter = memo(counter)
 
 // show the results for each set arguments are computed only for the first function call
+console.log('================================================================================')
 console.log('                                   Example 2')
 console.log('================================================================================')
 console.log('>>> memoCounter(listA)  --> ', memoCounter(listA))
@@ -91,12 +92,11 @@ console.log('===================================================================
 console.log('>>> memoCounter(listB)  --> ', memoCounter(listB))
 console.log('================================================================================')
 console.log('>>> memoCounter(listA)  --> ', memoCounter(listA))
-console.log('================================================================================')
 
 
 
 
-
+// --------------- Example 3 ---------------
 const timely = (n) => {
     // use console.log in the function to see if the result 
     // is computed or taken from cache
@@ -119,6 +119,7 @@ let timerStart
 
 // show the results for each set arguments are computed only for the first function call
 // and difference in time needed for computing the results and using cached ones
+console.log('================================================================================')
 console.log('                                   Example 3')
 console.log('================================================================================')
 timerStart = Date.now()

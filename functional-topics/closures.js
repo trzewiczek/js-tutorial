@@ -1,3 +1,4 @@
+// --------------- Example 1 ---------------
 // functional tick
 const tickFactory = () => {
     // counter local to the tickFactory function scope
@@ -32,7 +33,7 @@ console.log(`>>> tickA()  ------------>  A: ${tickA()}`)
 console.log(`>>> tickB()  ------------>          B: ${tickB()}`)
 
 
-
+// --------------- Example 2 ---------------
 // pseudo object-orientation in functional world
 const counterFactory = () => {
     // counter local to the tickFactory function scope
@@ -76,7 +77,7 @@ console.log(`>>> counterA.tick()   --->  A: ${counterA.tick()}`)
 console.log(`>>> counterB.tick()   --->          B: ${counterB.tick()}`)
 
 
-
+// --------------- Example 3 ---------------
 // partial application
 const partialFactory = (startTime) => {
     // initialize local counter variable with value 
@@ -113,7 +114,7 @@ console.log(`>>> partialB(10)  ------->          B: ${partialB(10)}`)
 
 
 
-
+// --------------- Example 4 ---------------
 // function wrappers
 // logger is a function that takes another function as an argument 
 // and wraps it around with additional logging capabilities
@@ -158,6 +159,8 @@ logEgt(5, 7)
 logObj('a', 5)
 
 
+
+// --------------- Example 5 ---------------
 // universal wrapper
 const uniLogger = (someFunction) => {
     // using rest operator we can make no assumption 
