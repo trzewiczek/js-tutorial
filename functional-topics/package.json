@@ -1,0 +1,15 @@
+{
+  "name": "melisa",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "one": "babel-node closures.js",
+    "two": "babel-node memoization.js"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "standard": "^10.0.3"
+  }
+}
