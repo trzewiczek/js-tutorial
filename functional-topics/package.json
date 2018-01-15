@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "closures": "babel-node closures.js",
-    "memoization": "babel-node memoization.js"
+    "memoization": "babel-node memoization.js",
+    "currying": "babel-node currying.js"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
